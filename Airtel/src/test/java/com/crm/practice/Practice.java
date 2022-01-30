@@ -19,7 +19,7 @@ import com.crm.pompages.Trainingpage;
 public class Practice extends Baseclass{
 	
 	
-	@Test(retryAnalyzer = )
+	@Test
 	public void addtocart() {
 		
 		Homepage hp=new Homepage(driver);
