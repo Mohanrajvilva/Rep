@@ -20,6 +20,20 @@ public class Homepage {
 	@FindBy(linkText="Sign out")
 	private WebElement signoutbtn;
 	
+	@FindBy(id="course")
+	private WebElement courselink;
+	
+	@FindBy(linkText="Selenium Training")
+	private WebElement seleniumtraining;
+	
+	public WebElement getCourselink() {
+		return courselink;
+	}
+
+	public WebElement getSeleniumtraining() {
+		return seleniumtraining;
+	}
+
 	public Homepage(WebDriver driver)
 	{
 		PageFactory.initElements(driver,this);

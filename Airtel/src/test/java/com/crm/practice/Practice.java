@@ -1,9 +1,6 @@
 package com.crm.practice;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
+
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -25,12 +22,11 @@ public class Practice extends Baseclass{
 		Homepage hp=new Homepage(driver);
 		wlib.dropdown(hp.getDropdown(), 1);
 		hp.getSelenium().click();
-		Assert.assertEquals("a","b");
+		
 		
 		Trainingpage tp=new Trainingpage(driver);
 		wlib.doubleclick(driver, tp.getPlusbtn());
 		tp.getAddtocart().click();
-		wlib.alertpopup(driver);
-	}
-
+		wlib.alertpopup(driver); 
+}
 }
